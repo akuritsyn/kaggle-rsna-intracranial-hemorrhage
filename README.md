@@ -16,7 +16,7 @@
 ----|----
 | se\_resnext50\_32x4d | 512x512 |
 
-- Final score is an average ensemble of predictions from 10 models based on 5 folds and 3rd and 4th epochs  with clip=0.98
+- Final score is an ensemble average of 10 model predictions based on 3rd and 4th epochs from 5 folds with clip=0.98
 
 ## Windowing
 
