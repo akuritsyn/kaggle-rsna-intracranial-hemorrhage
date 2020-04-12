@@ -16,8 +16,6 @@
 ----|----
 | se\_resnext50\_32x4d | 512x512 |
 
-- Final score is an ensemble average of 10 model predictions based on 3rd and 4th epochs from 5 folds with clip=0.98
-
 ## Windowing
 
 For this challenge, windowing is important to focus on the matter, in this case the brain and the blood. There are good kernels explaining how windowing works.
@@ -70,6 +68,8 @@ One epoch probably takes 20,000 seconds to train with a single 1080ti.
 $ sh ./bin/predict001.sh
 ~~~
 
-[predict001.sh](https://github.com/appian42/kaggle-rsna-intracranial-hemorrhage/blob/master/bin/predict001.sh) does the predictions and makes a submission file for scoring on Kaggle. Please uncomment the last line if you want to automatically submit it to kaggle through API.
+- [predict001.sh](https://github.com/appian42/kaggle-rsna-intracranial-hemorrhage/blob/master/bin/predict001.sh) does the predictions and makes a submission file for scoring on Kaggle. Please uncomment the last line if you want to automatically submit it to kaggle through API.
+
+- Final score is an [ensemble average](https://github.com/akuritsyn/kaggle-rsna-intracranial-hemorrhage/blob/master/bin/average_predictions.py) of 10 model predictions based on 3rd and 4th epochs from 5 folds with clip=0.98
 
 
