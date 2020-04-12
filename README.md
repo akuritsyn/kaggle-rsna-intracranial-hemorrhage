@@ -1,6 +1,6 @@
 # [Kaggle RSNA Intracranial Hemorrhage Detection](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection)
 
-## Top 5% solution (56/1345) based on the initial template provided by [appian42](https://github.com/appian42/kaggle-rsna-intracranial-hemorrhage)
+## Top 5% solution (56/1345) based on an initial model developed by [appian42](https://github.com/appian42/kaggle-rsna-intracranial-hemorrhage)
 
 
 ## Requirements
@@ -13,10 +13,10 @@
 ## Architecture (Single model)
 
 | Backbone | Image size |
-----|----|----
+----|----
 | se\_resnext50\_32x4d | 512x512 |
 
-### Final score is an average ensemble of predictions from 10 models based on 5 folds and 3rd and 4th epochs 
+- Final score is an average ensemble of predictions from 10 models based on 5 folds and 3rd and 4th epochs  with clip=0.98
 
 ## Windowing
 
