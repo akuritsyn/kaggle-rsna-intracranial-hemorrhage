@@ -3,7 +3,7 @@ gpu=0
 fold=0
 ep=1
 tta=5
-clip=1e-6
+clip=0.98
 conf=./conf/${model}.py
 
 snapshot=./model/${model}/fold${fold}_ep${ep}.pt

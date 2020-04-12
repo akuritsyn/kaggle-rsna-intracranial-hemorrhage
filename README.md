@@ -1,6 +1,6 @@
-# RSNA Intracranial Hemorrhage Detection
+# [Kaggle RSNA Intracranial Hemorrhage Detection](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection)
 
-This is the project for [RSNA Intracranial Hemorrhage Detection](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection) hosted on Kaggle in 2019.
+## Top 5% solution (56/1345) based on the initial template provided by [appian42](https://github.com/appian42/kaggle-rsna-intracranial-hemorrhage)
 
 
 ## Requirements
@@ -10,12 +10,13 @@ This is the project for [RSNA Intracranial Hemorrhage Detection](https://www.kag
 - [NVIDIA apex](https://github.com/NVIDIA/apex) 0.1 (for mixed precision training)
 
 
-## Performance (Single model)
+## Architecture (Single model)
 
-| Backbone | Image size | LB |
+| Backbone | Image size |
 ----|----|----
-| se\_resnext50\_32x4d | 512x512 | 0.070 - 0.072 |
+| se\_resnext50\_32x4d | 512x512 |
 
+### Final score is an average ensemble of predictions from 10 models based on 5 folds and 3rd and 4th epochs 
 
 ## Windowing
 

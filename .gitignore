@@ -4,3 +4,7 @@ data
 input
 model
 *.py[cod]
+apex
+.vscode
+.gitignore
+pseudolabeling
